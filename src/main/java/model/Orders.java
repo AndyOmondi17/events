@@ -27,4 +27,12 @@ public class Orders {
     public void setIdProduct(int idProduct) {
         this.idProduct = idProduct;
     }
+
+    public int getNumberOfProducts() {
+        return numberOfProducts;
+    }
+
+    public void setNumberOfProducts(int numberOfProducts) {
+        this.numberOfProducts = numberOfProducts;
+    }
 }
