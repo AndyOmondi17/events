@@ -19,4 +19,12 @@ public class Orders {
     public void setLogin(String login) {
         this.login = login;
     }
+
+    public int getIdProduct() {
+        return idProduct;
+    }
+
+    public void setIdProduct(int idProduct) {
+        this.idProduct = idProduct;
+    }
 }
