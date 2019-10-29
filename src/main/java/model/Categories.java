@@ -11,4 +11,8 @@ public class Categories {
         this.description = description;
         this.imagePath = imagePath;
     }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
 }
