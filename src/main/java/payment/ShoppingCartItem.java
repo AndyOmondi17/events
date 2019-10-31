@@ -4,16 +4,27 @@ import java.net.URL;
 
 public class ShoppingCartItem implements Cloneable
 {
-
+    public String itemName;
+    public int itemCost;
     public int quantity;
     public URL descriptionURL;
-    public int total;
 
-    public ShoppingCartItem(int quantity, URL descriptionURL)
+    public ShoppingCartItem()
+    {
+    }
+
+    public ShoppingCartItem(
+                            int quantity, URL descriptionURL)
     {
         this.quantity = quantity;
         this.descriptionURL = descriptionURL;
     }
+
+// The add method is a quick method for combining two similar
+// items. It doesn't perform any checks to insure that they are
+// similar, however. You use this method when adding items to a
+// cart, rather than storing two instances of the same item, you
+// add the quantities together.
 
     public void add(ShoppingCartItem otherItem)
     {
@@ -28,32 +39,19 @@ public class ShoppingCartItem implements Cloneable
         this.quantity = this.quantity - otherItem.quantity;
     }
 
-// The equals method does something a little dirty here, it only
-// compares the item names and item costs. Technically, this is
-// not the way that equals was intended to work.
-
-    public boolean equals(Object other)
-    {
-        if (this == other) return true;
-
-        if (!(other instanceof ShoppingCartItem))
-            return false;
-
-        ShoppingCartItem otherItem =
-                (ShoppingCartItem) other;
-    }
-
 // Create a copy of this object
 
     public ShoppingCartItem copy()
     {
-        return new ShoppingCartItem(quantity, descriptionURL);
+        return new ShoppingCartItem(
+                quantity, descriptionURL);
     }
 
 // Create a printable version of this object
 
     public String toString()
     {
-        return " qty: "+quantity+" total: "+ total;
+        return " cost: "+itemCost+" qty: "+quantity+" desc: "+
+                descriptionURL;
     }
 }
