@@ -1,0 +1,76 @@
+.navbar {
+    background-color: #32104D;
+}
+
+#search-bar {
+    padding-top: 8%;
+    padding-bottom:3%;
+}
+
+#caraousel {
+    padding-top:5%;
+}
+
+carousel-example-2 {
+ height: 550px;
+ width: 100%;
+}
+
+#eventList {
+    padding:2%;
+}
+
+.more-btn {
+    background-color:#32104D;
+}
+
+.card-body {
+    text-align : center;
+}
+
+.padding-heading {
+    padding-top: 8%;
+    padding-bottom:3%;
+}
+
+.modal-notify .modal-header {
+    border-radius: 3px 3px 0 0;
+}
+.modal-notify .modal-content {
+    border-radius: 3px;
+}
+
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+padding-heading img {
+    left:0;
+    top:0;
+    width: 440px;
+    height: 325px;
+
+    position:absolute;
+}
+
+.main-color{
+    background-color:#32104D;
+}
+
+.form-img {
+    position: absolute;
+    width: 372.49px;
+    height: 390.92px;
+    border-radius: 2px;
+    transform: rotate(-22.31deg);
+}
