@@ -4,7 +4,6 @@ import java.net.URL;
 
 public class ShoppingCartItem implements Cloneable
 {
-    public String itemName;
     public int itemCost;
     public int quantity;
     public URL descriptionURL;
