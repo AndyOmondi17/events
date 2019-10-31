@@ -7,17 +7,8 @@ public class Orders {
 
     public Orders(String login, int idProduct, int numberOfProducts) {
         super();
-        this.login = login;
         this.idProduct = idProduct;
         this.numberOfProducts = numberOfProducts;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
     }
 
     public int getIdProduct() {
