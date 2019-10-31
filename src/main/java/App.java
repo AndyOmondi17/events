@@ -14,13 +14,7 @@ public class App {
 
     public static void main(String[] args){
 
-        Map<String,Object> model = new HashMap<>();
 
-//        get("/",(request, response) ->{
-//            List<Bookings> allBookings = bookingsDao.getAll();
-//            model.put("bookings",allBookings);
-//            return new ModelAndView("index.hbs");
-//        }, new HandlebarsTemplateEngine());
 
 
     }
