@@ -29,4 +29,4 @@ CREATE TABLE customer_booking(
     booking_id int
 );
 
-CREATE DATABASE events_test WITH TEMPLATE events;
+
