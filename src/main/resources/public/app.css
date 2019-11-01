@@ -4,7 +4,7 @@
 
 #search-bar {
     padding-top: 8%;
-    padding-bottom:3%;
+    padding-bottom:1%;
 }
 
 #caraousel {
@@ -73,4 +73,26 @@ padding-heading img {
     height: 390.92px;
     border-radius: 2px;
     transform: rotate(-22.31deg);
+}
+
+.nav-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size : 28px;
+}
+
+.nav-other{
+    font-family: 'Patrick Hand', cursive;
+}
+
+.heading-text {
+    font-family: 'Chewy', cursive;
+}
+
+.page-text {
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.input-group {
+    padding-top:3%;
+    padding-bottom:3%;
 }

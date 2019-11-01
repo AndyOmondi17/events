@@ -2,7 +2,7 @@
     <div class="padding-heading">
         <div class="row">
             <div class="col-md-4">
-                <img src="/images/poster6.jpg" class="img-fluid form-img">
+
 
             </div>
             <div class="col-md-8">
@@ -13,7 +13,7 @@
                     <div class="card-body">
 
                         <!-- Default form subscription -->
-                        <form>
+                        <form action="/event/new" method="post">
                             <p class="h4 text-center py-4">CREATE EVENT</p>
 
                             <div class="row">
@@ -23,46 +23,45 @@
 
                                     <br>
 
-                                    <label for="category">Category</label>
-                                    <br>
-                                    <select class="browser-default custom-select" id="category" name="category">
-                                        <option selected>Select Category</option>
-                                        <option value="music">Music</option>
-                                        <option value="technology">Technology</option>
-                                        <option value="sports">Sports</option>
-                                        <option value="art">Art</option>
-                                        <option value="movies">Movies</option>
-                                    </select>
-
-                                    <br>
-                                    <label for="location" class="grey-text font-weight-light">Location</label>
-                                    <input type="text" id="location" name="location" class="form-control">
+                                    <label for="eventLocation" class="grey-text font-weight-light">Location</label>
+                                    <input type="text" id="eventLocation" name="eventLocation" class="form-control">
                                     <br>
 
-                                    <label for="description" class="grey-text font-weight-light">Event Description</label>
-                                    <input type="text" id="description" class="form-control">
+                                    <label for="defaultFormCardEmailEx" class="grey-text font-weight-light">Event Date</label>
+                                    <input type="date" id="date" class="form-control" name="eventDate">
+                                    <br>
 
+                                    <label for="defaultFormCardEmailEx" class="grey-text font-weight-light">Description</label>
+                                    <input type="text" id="description" class="form-control" name="description">
                                     <br>
 
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="defaultFormCardEmailEx" class="grey-text font-weight-light">Event Date</label>
-                                    <input type="date" id="date" class="form-control">
-
-                                    <br>
 
                                     <label for="price" class="grey-text font-weight-light">Price</label>
                                     <input type="number" id="price" name="price" class="form-control">
                                     <br>
 
                                     <label for="input_starttime" class="grey-text font-weight-light">Start Time</label>
-                                    <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
+                                    <input placeholder="Selected time" type="time" id="startTime" class="form-control timepicker">
 
 
                                     <br>
                                     <label for="input_endtime" class="grey-text font-weight-light">End Time</label>
-                                    <input placeholder="Selected time" type="text" id="input_endtime" class="form-control timepicker">
+                                    <input placeholder="Selected time" type="time" id="endTime" class="form-control timepicker">
 
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                </div>
+                                <div class="custom-file">
+
+                                    <input type="file" class="custom-file-input" id="event_poster"
+                                           aria-describedby="inputGroupFileAddon01" name="eventPoster">
+                                    <label class="custom-file-label" for="inputGroupFile01">Insert Poster</label>
                                 </div>
                             </div>
                             <div class="text-center py-4 mt-3">
