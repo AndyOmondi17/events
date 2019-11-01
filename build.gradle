@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'Events'
@@ -20,6 +21,9 @@ dependencies {
     compile group: 'org.sql2o', name: 'sql2o', version: '1.5.4'
     compile group: 'org.postgresql', name: 'postgresql', version: '42.2.2'
     compile "com.google.code.gson:gson:2.8.6"
-
-
 }
+mainClassName = 'App'
+
+
+
+
