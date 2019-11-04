@@ -38,7 +38,7 @@ public class Sql2oeventsDao implements eventsDao {
 
     @Override
     public void add(Events events) {
-        String sql = "INSERT INTO events_table (eventName,eventDescription,eventLocation,eventDate,startTime,endTime,eventPoster,) VALUES (:eventName,:eventDescription,:eventDate,:startTime,:endTime :eventLocation,:eventPoster)";
+        String sql = "INSERT INTO events_table (eventname,eventdescription,eventlocation,eventdate,starttime,endtime,eventposter) VALUES (:eventName,:eventDescription,:eventDate,:startTime,:endTime,:eventLocation,:eventPoster)";
         try (Connection con = sql2o.open()) {
             int id = (int) con.createQuery(sql, true)
                     .bind(events)

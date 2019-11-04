@@ -44,14 +44,46 @@
                         <a class="nav-link nav-other" href="/">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-other" href="/">Create Event</a>
+                        <a class="nav-link nav-other" href="/event/new">Create Event</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link nav-other" href="/">My Events</a>
+                        <a class="nav-link nav-other" href="/" data-toggle="modal" data-target = "#orangeModalSubscription1">My Events</a>
                     </li>
 
                 </ul>
+            </div>
+            <div class="modal fade" id="orangeModalSubscription1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-notify main-color" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
+                        <!--Header-->
+                        <div class="modal-header text-center main-color">
+                            <h4 class="modal-title white-text w-100 font-weight-bold py-2 heading-text">Book Event</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="white-text">&times;</span>
+                            </button>
+                        </div>
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <h2 class="card-title heading-text">Event Name : Rock Festival</h2>
+                            <p class="card-text page-text">Location : Carnivore</p>
+                            <p class="card-text page-text">Date : Friday, 29th October 2019</p>
+                            <p class="card-text page-text">Time : 1800hrs - 0600hrs</p>
+                            <p class="card-text page-text">Price : 1000</p>
+                            <p class="card-text page-text">Number of tickets : 2</p>
+
+                        </div>
+
+                        <!--Footer-->
+                        <div class="modal-footer justify-content-center">
+                            <a type="submit" class="btn main-color waves-effect" data-dismiss="modal">Close</a>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
             </div>
         </nav>
 
